@@ -1,0 +1,28 @@
+bazy danych
+	miejsce do chowania danych
+	typy baz danych:
+		zwykłe pliki
+		relacyjne(relational)
+		nierelacyjne(non-relational)
+	Czym jest sql?
+	Do czego używamy sql?
+	Zrozumieć architekture sqla.
+	
+	RDBMS - Relation database managment system
+	Co to jest?
+
+	ORM - map of sql rows
+	rails g model
+	Migrations(problems), schema
+	relations
+
+	Sqlite vs MySQL vs Postgres
+Konfiguracja postgres
+
+Modele, migracje, asocjacje
+
+CRUD
+
+Scoping 
+
+N+1 error

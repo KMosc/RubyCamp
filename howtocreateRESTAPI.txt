@@ -1,0 +1,93 @@
+Czym jest API
+
+A - Application
+P - Programming
+I - Interface
+
+służy do komunikacji pomiedzy różnymi komponentami systemu
+
+Web Aplikacje + Http
+
+HTTP - Hypertext Transfer Protocol
+Protokół przesyłu tekstu.
+
+Iot bankomaty nie korzystają z HTTP
+Głównie przeglądarki korzystają z HTTP
+
+
+
+HTTP wykorzystuje metody
+-GET
+-HEAD
+-POST
+-DELETE
+-OPTIONS
+-PATCH
+
+Głównie w REST-API korzystamy z GET, POST, DELETE
+
+Pytania:
+
+Czym jest Proxy?
+Pośrednik w przesyłu danych. Bezpieczeństwo Http.
+Proxy wykonuje requesty w imieniu klientów
+Najprostszym proxy jest VPN.
+
+Czym jest Reverse Proxy?
+Reverse proxy wykonuje requesty w imieniu serwerów
+
+
+Proxy vs Reverse Proxy
+https://simplicable.com/new/proxy-vs-reverse-proxy#:~:text=A%20proxy%20makes%20requests%20on%20behalf%20of%20clients.,vs%20Reverse%20Proxy%20Proxies%20make%20requests%20for%20clients.
+
+
+Typy APIs HTTP
+- SOAP (reprezentacja obiektu przez XML)
+- REST (baza http, wykorzystujemy czasowniki http)
+- JSON-RPC (działa na jsonie, wykorzystuje swoje metody). Nawet jesli jakis error pojawi się, pokaze sie 200
+
+Typy APis HTTP
+REST - Representational state transfer
+(pl: zmiana stanu przez reprezentacje)
+Każda tabela w bazie danych ma swój endpoint w REST
+
+
+Jak opisywany jest REST
+- Client - Server
+- Stateless ( Co to jest stan? Nie ma sesji. W jaki sposób indetyfikowac uzytkownikow?)
+Dlaczego nie ma sesji?
+Celem jest wydajność, rzeczy implementowane po stronie klienta. 
+Można łączyć się z dowolną liczbą urządzeń
+- Cache 
+- Uniform interface
+	-Identification of resources
+	-Manipulation of resources through representation
+	-Self-descriptive messages
+	-Hypermedia as the engine of application state
+-Layered system
+
+Najlepsze praktyki
+-REST API powinno być proste.
+-Omijać duplikacje kodu.
+-Dodać dokumentacje.
+-clean output(zazwyczaj JSON, powinien być w każdym endpoincie),
+-Zawsze myśl o architekturze bezstanowej(stateless).
+-Myśl o skalalności(scalability).
+
+Autentykacja
+JSON WEB TOKEN (JWT)
+jwt.io
+
+device gem authentication ruby
+
+
+Różnica między autentykacją a autoryzacją
+autentykacja
+czy jesteśmy tym użytkownikiem
+autoryzacja
+rola użytkownika
+
+
+RAILS REST API
+stwórz GET POST PUT DELETE ENDPOINT 
+pamiętaj o zwracaniu json

@@ -1,0 +1,2 @@
+rails g model genre title:string description:text 
+rails g model movie title:string description:text age_restriction:integer starts_at:datetime genre:references cinema_hall:references 

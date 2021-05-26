@@ -1,0 +1,8 @@
+desk -> buy/reservation -> sala -> ticket
+
+
+
+curl -v -d '{"paid":"20"}' http://localhost:3000/ticket_desks/2/cinema_halls/2/tickets#buy --header "Accept: application/json" --header "Content-Type: application/json"
+
+
+curl -v -d '{"paid":"false"}' http://localhost:3000/ticket_desks/2/cinema_halls/2/tickets --header "Accept: application/json" --header "Content-Type: application/json"

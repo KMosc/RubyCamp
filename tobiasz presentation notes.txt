@@ -1,0 +1,32 @@
+Validation, Debugging, Error handling
+
+
+Validation:
+The most popular validations:
+
+Active Model Validation
+Before data goes to backend, we can check 
+if data is needed
+
+
+Types of validations
+
+validates_associated
+https://apidock.com/rails/ActiveRecord/Validations/ClassMethods/validates_associated
+confirmation
+
+exclusion
+inclusion
+format (reqular expresion)
+length
+numericality
+presence
+
+Form Objects
+Dry Validation
+
+
+Debugging bry
+
+
+https://www.youtube.com/channel/UCoX9gt9ZWF2jgQka5mqT32A
